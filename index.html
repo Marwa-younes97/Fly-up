@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-group input[type="date"] {
+            color: #555;
+        }
+
+        .submit-btn {
+            background: #4facfe;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .submit-btn:hover {
+            background: #00c6ff;
+        }
+
+        footer {
+            background-color: #4facfe;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream destination is just a click away!</p>
+    </div>
+
+    <div class="container">
+        <form class="booking-form">
+            <h2>Book Your Trip</h2>
+
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="">Select a destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="dubai">Dubai</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure">
+            </div>
+
+            <div class="form-group">
+                <label for="return">Return Date:</label>
+                <input type="date" id="return" name="return">
+            </div>
+
+            <div class="form-group">
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="10" placeholder="Enter number of passengers">
+            </div>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Travel Booking | All rights reserved.
+    </footer>
+</body>
+</html>
